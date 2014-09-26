@@ -1,0 +1,4 @@
+php_con_workshop:
+    resource: "@PHPConWorkshopBundle/Resources/config/routing.xml"
+    prefix:   /
+
