@@ -1,4 +1,11 @@
 {% extends "::base.html.twig" %}
 {% block body %}
-{{ form(form) }}
+{{ form_start(form) }}
+    <div>
+        {{ form_label(form.title, "", {"class": "foo-bar"}) }}
+        {% do form.title.setRendered %}
+    </div>
+    {{ form_widget(form.date) }}
+    {{ form_widget(form.save) }}
+{{ form_end(form) }}
 {% endblock %}
