@@ -17,6 +17,7 @@ class WorkshopType extends AbstractType
         $builder
             ->add('title')
             ->add('date')
+            ->add('save', 'submit')
         ;
     }
     
